@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    background-color: #ddd;
+    height: 100vh;
+    transition: 1s;
+}
+
+.square {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    cursor: pointer;
+    z-index: 1;
+}
+
+div.red {
+    top: 20px;
+    left: 20px;
+    background-color: red;
+}
+
+div.green {
+    top: 60px;
+    left: 20px;
+    background-color: green;
+}
+
+div.blue {
+    top: 100px;
+    left: 20px;
+    background-color: blue;
+}
+
+div.orange {
+    top: 140px;
+    left: 20px;
+    background-color: orange;
+}
+
+div.yellow {
+    top: 20px;
+    left: 60px;
+    background-color: yellow;
+}
+
+div.purple {
+    top: 60px;
+    left: 60px;
+    background-color: purple;
+}
+
+div.silver {
+    top: 100px;
+    left: 60px;
+    background-color: silver;
+}
+
+div.brown {
+    top: 140px;
+    left: 60px;
+    background-color: brown;
+}
+
+.bg p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 100vh;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-family: arial;
+    opacity: 0;
+    color: white;
+    transition: 1s;
+}
+
+div.red:hover~div.bg {
+    background-color: red;
+}
+
+div.green:hover~div.bg {
+    background-color: green;
+}
+
+div.blue:hover~div.bg {
+    background-color: blue;
+}
+
+div.orange:hover~div.bg {
+    background-color: orange;
+}
+
+div.yellow:hover~div.bg {
+    background-color: yellow;
+}
+
+div.purple:hover~div.bg {
+    background-color: purple;
+}
+
+div.silver:hover~div.bg {
+    background-color: silver;
+}
+
+div.brown:hover~div.bg {
+    background-color: brown;
+}
+
+div.red:hover~div.bg p.red,
+div.green:hover~div.bg p.green,
+div.blue:hover~div.bg p.blue,
+div.orange:hover~div.bg p.orange,
+div.purple:hover~div.bg p.purple,
+div.silver:hover~div.bg p.silver,
+div.brown:hover~div.bg p.brown {
+    opacity: 1;
+}
+
+div.yellow:hover~div.bg p.yellow {
+    opacity: 1;
+    color: black;
+}
